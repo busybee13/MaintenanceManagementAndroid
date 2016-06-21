@@ -1,11 +1,19 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <!-- bottom line color -->
+        <item name="colorControlNormal">#87cba2</item>
+
+    </style>
+
+    <style name="Widget.Spinner.Region" parent="android:Widget.DeviceDefault.DropDownItem.Spinner">
+        <item name="android:background">@drawable/style_spinner</item>
+
     </style>
 
 </resources>
