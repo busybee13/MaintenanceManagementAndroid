@@ -11,10 +11,8 @@
         <activity android:name=".MainActivity">
 
         </activity>
-        <activity
-            android:name=".AccountInformationBaseActivity"
-            android:label="@string/title_activity_account_information_base"
-            android:theme="@style/AppTheme.NoActionBar">
+
+        <activity android:name=".AccountInformationExpertActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout_base"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    android:id="@+id/coordinatorLayout_base"
     tools:context="com.torchacademy.maintenancemanagement.AccountInformationBaseActivity">
 
     <android.support.design.widget.AppBarLayout
@@ -22,60 +24,56 @@
             android:fitsSystemWindows="true"
             app:contentScrim="?attr/colorPrimary"
             app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                 />
+                android:layout_height="match_parent" />
 
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar"
-                app:title="Full Name"
-                app:subtitle="ID"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 app:layout_collapseMode="pin"
-                app:popupTheme="@style/AppTheme.PopupOverlay" />
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                app:subtitle="ID"
+                app:title="Full Name" />
 
         </android.support.design.widget.CollapsingToolbarLayout>
     </android.support.design.widget.AppBarLayout>
+
     <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_editProfile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
         android:baselineAlignBottom="true"
         android:src="@android:drawable/ic_menu_edit"
-        android:layout_margin="@dimen/fab_margin"
-        android:id="@+id/fab_editProfile"
         app:layout_anchor="@id/app_bar"
-        app:layout_anchorGravity="bottom|end"
-        />
+        app:layout_anchorGravity="bottom|end" />
+    <include layout="@layout/content_account_information_base"/>
 
-    <ViewStub
-        android:id="@+id/viewStub_profileContent"
-        android:inflatedId="@+id/content_custom_account_information"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-         />
 
 
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
+
         <Button
+            android:id="@+id/button_customProfileAction"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingRight="5dp"
-            android:layout_centerHorizontal="true"
             android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
             android:layout_marginBottom="@dimen/activity_vertical_margin"
-            tools:text="Custom Action"
-            tools:drawableLeft="@android:drawable/ic_menu_close_clear_cancel"
             android:background="@color/colorPrimaryDark"
+            android:paddingRight="5dp"
             android:textColor="@android:color/white"
-            android:id="@+id/button_customProfileAction"
-            />
+            tools:drawableLeft="@android:drawable/ic_menu_close_clear_cancel"
+            tools:text="Custom Action" />
     </RelativeLayout>
 
 
-
 </android.support.design.widget.CoordinatorLayout>
+

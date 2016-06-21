@@ -27,7 +27,7 @@ abstract class AccountInformationBaseActivity extends AppCompatActivity {
 
     private void setupViews() {
         setupTitle(userName, ID);
-        viewStub_profileContent = (ViewStub) findViewById(R.id.viewStub_profileContent);
+        viewStub_profileContent = (ViewStub) findViewById(R.id.viewStub_customContent);
         button_customProfileAction=(Button) findViewById(R.id.button_customProfileAction);
         // setup custom content layout
         setContentLayout();
