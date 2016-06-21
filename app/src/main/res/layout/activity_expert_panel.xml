@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="16dp"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    android:weightSum="5"
+    tools:context=".ExpertPanelActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/button_incoming_request"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_gravity="center"
+            android:background="@color/color"
+            android:drawableLeft="@drawable/ic_request"
+            android:drawableStart="@drawable/ic_request"
+            android:drawableTint="@android:color/white"
+            android:paddingLeft="65dp"
+            android:paddingRight="65dp"
+            android:text="Incoming Requests"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/textView_incoming_requests_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/badge_circle"
+            android:minWidth="25dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:elevation="4dp"
+            android:text="10"
+            android:textColor="#FFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+
+        <Button
+            android:id="@+id/button_account_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_gravity="center"
+            android:background="@color/color"
+            android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+            android:drawableStart="@drawable/ic_account_circle_black_24dp"
+            android:drawableTint="@android:color/white"
+            android:paddingLeft="65dp"
+            android:paddingRight="65dp"
+            android:text="Account Info"
+            android:textColor="@android:color/white"></Button>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        >
+
+        <Button
+            android:id="@+id/button_my_requests"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_gravity="center"
+            android:background="@color/color"
+            android:drawableLeft="@drawable/ic_list_black_24dp"
+            android:drawableStart="@drawable/ic_list_black_24dp"
+            android:drawableTint="@android:color/white"
+            android:paddingLeft="65dp"
+            android:paddingRight="65dp"
+            android:text="My Requests"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/textView_my_requests_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:minWidth="25dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/badge_circle"
+            android:elevation="4dp"
+            android:text="10"
+            android:textColor="#FFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+
+
+    <Button
+        android:id="@+id/button_new_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_gravity="center"
+        android:background="@color/color"
+        android:drawableLeft="@drawable/ic_new_message"
+        android:drawableStart="@drawable/ic_new_message"
+        android:drawableTint="@android:color/white"
+        android:paddingLeft="65dp"
+        android:paddingRight="65dp"
+        android:text="New Message"
+        android:textColor="@android:color/white" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/button_inbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="24dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="24dp"
+            android:background="@color/color"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:drawableStart="@drawable/ic_email_black_24dp"
+            android:drawableTint="@android:color/white"
+            android:paddingLeft="65dp"
+            android:paddingRight="65dp"
+            android:text="Inbox"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/textView_inbox_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="25dp"
+            android:background="@drawable/badge_circle"
+            android:elevation="4dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_gravity="right"
+            android:text="10"
+            android:textColor="#FFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+</LinearLayout>
