@@ -45,7 +45,7 @@ abstract class AccountInformationBaseActivity extends AppCompatActivity {
     }
 
     private void setupTitle(String fullName, String ID){
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar = (Toolbar) findViewById(R.id.toolbar_profile);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle(fullName);
         getSupportActionBar().setSubtitle(ID);

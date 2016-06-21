@@ -8,11 +8,12 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".AccountInformationUserActivity">
 
         </activity>
-
-        <activity android:name=".AccountInformationUserActivity">
+        <activity android:name=".AccountInformationExpertActivity"></activity>
+        <activity android:name=".NewRequestActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
