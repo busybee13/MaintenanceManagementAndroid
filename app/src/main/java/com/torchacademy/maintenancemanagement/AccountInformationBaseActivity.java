@@ -6,11 +6,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.ViewStub;
+import android.widget.Button;
 
 abstract class AccountInformationBaseActivity extends AppCompatActivity {
     Toolbar toolbar;
     FloatingActionButton fab_editProfile;
     String userName;
+    Button button_customProfileAction;
     String ID;
     ViewStub viewStub_profileContent;
 
@@ -26,7 +28,7 @@ abstract class AccountInformationBaseActivity extends AppCompatActivity {
     private void setupViews() {
         setupTitle(userName, ID);
         viewStub_profileContent = (ViewStub) findViewById(R.id.viewStub_profileContent);
-
+        button_customProfileAction=(Button) findViewById(R.id.button_customProfileAction);
         // setup custom content layout
         setContentLayout();
 
