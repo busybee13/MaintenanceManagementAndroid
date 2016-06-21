@@ -5,12 +5,14 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.view.ViewStub;
 
 abstract class AccountInformationBaseActivity extends AppCompatActivity {
     Toolbar toolbar;
     FloatingActionButton fab_editProfile;
     String userName;
     String ID;
+    ViewStub viewStub_profileContent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +25,11 @@ abstract class AccountInformationBaseActivity extends AppCompatActivity {
 
     private void setupViews() {
         setupTitle(userName, ID);
+        viewStub_profileContent = (ViewStub) findViewById(R.id.viewStub_profileContent);
+
+        // setup custom content layout
+        setContentLayout();
+
         // setup FAB
         fab_editProfile = (FloatingActionButton) findViewById(R.id.fab_editProfile);
         fab_editProfile.setOnClickListener(new View.OnClickListener() {
@@ -31,6 +38,7 @@ abstract class AccountInformationBaseActivity extends AppCompatActivity {
                 goToEditProfileActivity();
             }
         });
+        setCustomButtonAction();
 
     }
 
@@ -50,6 +58,10 @@ abstract class AccountInformationBaseActivity extends AppCompatActivity {
     private void goToEditProfileActivity(){
 
     }
+    /* Implement the following for children
+    viewStub_profileContent.setLayoutResource(R.layout.custom_content_account_information);
+    View inflated = viewStub_profileContent.inflate();
+     */
     abstract void setContentLayout();
 
     abstract void setCustomButtonAction();

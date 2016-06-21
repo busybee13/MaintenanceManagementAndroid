@@ -49,6 +49,14 @@
         app:layout_anchorGravity="bottom|end"
         />
 
+    <ViewStub
+        android:id="@+id/viewStub_profileContent"
+        android:inflatedId="@+id/content_custom_account_information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         />
+
+
 
     <RelativeLayout
         android:layout_width="match_parent"
