@@ -27,7 +27,7 @@ public class AccountInformationExpertActivity extends AccountInformationBaseActi
     @Override
     void setCustomButtonAction() {
         button_customProfileAction.setText("Off Duty");
-        button_customProfileAction.setCompoundDrawablesWithIntrinsicBounds(getResources().getDrawable(android.R.drawable.ic_menu_close_clear_cancel),null,null,null);
+        button_customProfileAction.setCompoundDrawablesWithIntrinsicBounds(android.R.drawable.ic_menu_close_clear_cancel,0,0,0);
         button_customProfileAction.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -1,45 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_gravity="fill_vertical"
     android:layout_height="match_parent"
-    android:id="@+id/nestedScrollView_user"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:showIn="@layout/activity_account_information_base"
-    tools:context="com.torchacademy.maintenancemanagement.AccountInformationBaseActivity"
-    >
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="@dimen/activity_vertical_margin">
 
+    <TextView
+        android:id="@+id/textView_buildingName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="Building Name: "
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_size_profile" />
 
-
-    <RelativeLayout
+    <TextView
+        android:id="@+id/textView_buildingNameValue"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-        android:layout_marginRight="@dimen/activity_horizontal_margin"
-        android:layout_marginTop="@dimen/activity_vertical_margin">
+        android:layout_toRightOf="@id/textView_buildingName"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="Value"
+        android:textSize="@dimen/text_size_profile" />
 
-        <TextView
-            android:id="@+id/textView_buildingName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/activity_vertical_margin"
-            android:text="Building Name: "
-            android:textSize="@dimen/text_size_profile" />
+    <TextView
+        android:id="@+id/textView_aptNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_buildingName"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="Apt #: "
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_size_profile" />
 
-        <TextView
-            android:id="@+id/textView_aptNumber"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/textView_buildingName"
-            android:layout_marginTop="@dimen/activity_vertical_margin"
-            android:text="Apt #: "
-            android:textSize="@dimen/text_size_profile" />
+    <TextView
+        android:id="@+id/textView_aptNumberValue"
+        android:layout_width="match_parent"
+        android:layout_below="@id/textView_buildingName"
+        android:layout_toRightOf="@id/textView_aptNumber"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="Value"
+        android:textSize="@dimen/text_size_profile" />
 
 
+</RelativeLayout>
 
-    </RelativeLayout>
 
-
-</android.support.v4.widget.NestedScrollView>
