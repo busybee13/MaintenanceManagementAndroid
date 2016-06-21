@@ -23,11 +23,6 @@ public class ExpertPanelActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_expert_panel);
 
-        getSupportActionBar().setTitle("My Home");
-        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
-        getSupportActionBar().setCustomView(R.layout.actionbar);
-        //getSupportActionBar().setIcon(R.drawable.ic_action_name);
-
         setupViews();
     }
 
@@ -42,6 +37,10 @@ public class ExpertPanelActivity extends AppCompatActivity {
      * Omar Halabi and Ahmad Masri
      */
     private void setupViews() {
+
+        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+        getSupportActionBar().setCustomView(R.layout.actionbar);
+
         textView_incoming_requests_notification = (TextView)
                 findViewById(R.id.textView_incoming_requests_notification);
 
@@ -64,9 +63,7 @@ public class ExpertPanelActivity extends AppCompatActivity {
     private void resetCounters() {
 
         // TODO: 6/21/2016 Implement this method
-
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
-
 
     }
 }
