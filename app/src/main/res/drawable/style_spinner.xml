@@ -3,29 +3,21 @@
     <item>
         <layer-list>
             <item>
-        <shape xmlns:android="http://schemas.android.com/apk/res/android">
-            <solid android:color="#46a66b"/>
-            <stroke
-                android:width="2dp"
-                android:color="#f2f4f3"/>
-            <padding
-                android:bottom="2dp"
-                android:left="2dp"
-                android:right="2dp"
-                android:top="2dp"/>
+                <shape xmlns:android="http://schemas.android.com/apk/res/android">
+                    <solid android:color="#46a66b" />
+                    <stroke android:width="2dp" android:color="#f2f4f3" />
+                    <padding android:bottom="2dp" android:left="2dp" android:right="2dp" android:top="2dp" />
 
-        </shape>
-    </item>
+                </shape>
+            </item>
 
-    <item android:right="30dp">
-        <bitmap
+            <item android:right="30dp">
+                <bitmap
 
-            android:gravity="right"
-            android:src="@drawable/ic_arrow_down"
-            >
+                    android:gravity="right" android:src="@drawable/style_edittext">
 
-        </bitmap>
-    </item>
+                </bitmap>
+            </item>
         </layer-list>
     </item>
 </selector>
