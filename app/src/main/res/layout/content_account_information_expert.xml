@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="fill_vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.torchacademy.maintenancemanagement.AccountInformationBaseActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:id="@+id/textView_technicianType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="Technician Type: "
+            android:textSize="@dimen/text_size_profile" />
+
+        <TextView
+            android:id="@+id/textView_technicianTypeValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_toRightOf="@id/textView_technicianType"
+            android:textSize="@dimen/text_size_profile"
+            tools:text="Value" />
+
+        <TextView
+            android:id="@+id/textView_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@id/textView_technicianType"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="Location: "
+            android:textSize="@dimen/text_size_profile" />
+
+        <TextView
+            android:id="@+id/textView_locationValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/textView_location"
+            android:layout_below="@id/textView_technicianType"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            tools:text="Value"
+            android:textSize="@dimen/text_size_profile" />
+
+        <TextView
+            android:id="@+id/textView_availability"
+            android:layout_width="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_location"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+
+            android:text="Availability: "
+            android:textSize="@dimen/text_size_profile" />
+
+        <TextView
+            android:id="@+id/textView_availabilityValue"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@id/textView_availability"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_location"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+
+            android:text="Value"
+            android:textSize="@dimen/text_size_profile" />
+
+
+    </RelativeLayout>
+
+
+</android.support.v4.widget.NestedScrollView>
