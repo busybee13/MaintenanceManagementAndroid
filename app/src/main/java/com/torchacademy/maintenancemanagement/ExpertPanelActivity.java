@@ -3,6 +3,7 @@ package com.torchacademy.maintenancemanagement;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
@@ -23,6 +24,9 @@ public class ExpertPanelActivity extends AppCompatActivity {
         setContentView(R.layout.activity_expert_panel);
 
         getSupportActionBar().setTitle("My Home");
+        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+        getSupportActionBar().setCustomView(R.layout.actionbar);
+        //getSupportActionBar().setIcon(R.drawable.ic_action_name);
 
         setupViews();
     }
