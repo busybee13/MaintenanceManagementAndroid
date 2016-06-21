@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="#46a66b"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="Register"
+                android:textSize="25dp" />
+
+
+            <EditText
+                android:id="@+id/edittext_ID"
+                android:layout_width="290dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="#87cba2"
+                android:hint="ID #"
+                android:paddingLeft="25dp"
+                android:background="@drawable/style_edittext"
+                android:paddingBottom="10dp"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f2f4f3"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edittext_firstname"
+                android:layout_width="290dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="#87cba2"
+                android:hint="First Name"
+                android:paddingBottom="2dp"
+
+
+                android:paddingLeft="10dp"
+
+                android:paddingTop="2dp"
+                android:textColor="#87cba2"
+                android:textColorHint="#87cba2" />
+
+            <EditText
+                android:id="@+id/edittext_lastname"
+                android:layout_width="290dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="#87cba2"
+                android:hint="Last Name"
+                android:paddingBottom="2dp"
+                android:paddingLeft="10dp"
+
+                android:paddingTop="2dp"
+                android:textColor="#87cba2"
+                android:textColorHint="#87cba2" />
+
+            <EditText
+                android:id="@+id/edittext_mobilenumber"
+                android:layout_width="290dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="#87cba2"
+                android:hint="Mobile #"
+                android:paddingBottom="2dp"
+                android:paddingLeft="10dp"
+
+                android:paddingTop="2dp"
+                android:textColor="#87cba2"
+                android:textColorHint="#87cba2" />
+
+            <EditText
+                android:id="@+id/edittext_phonenumber"
+                android:layout_width="290dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="#87cba2"
+                android:hint="Phone #"
+                android:paddingBottom="2dp"
+                android:paddingLeft="10dp"
+
+                android:paddingTop="2dp"
+                android:textColor="#87cba2"
+                android:textColorHint="#87cba2" />
+
+            <EditText
+                android:id="@+id/edittext_email"
+                android:layout_width="290dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="#87cba2"
+                android:hint="E-mail"
+                android:paddingBottom="2dp"
+                android:paddingLeft="10dp"
+
+                android:paddingTop="2dp"
+                android:textColor="#87cba2"
+                android:textColorHint="#87cba2" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="290dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="50dp"
+            android:background="#2666af"
+            android:text="Submit"
+            />
+
+    </LinearLayout>
+

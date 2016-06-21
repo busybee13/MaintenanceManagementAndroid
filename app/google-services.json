@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "428432476334",
+    "project_id": "corded-pivot-134923"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:428432476334:android:10a8230e0cf9882e",
+        "android_client_info": {
+          "package_name": "com.torchacademy.maintenancemanagement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "428432476334-1m4g18228le2k21lv3mgddgval7p8jcv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.torchacademy.maintenancemanagement",
+            "certificate_hash": "EA8BF7D214B8BA57466FD8B32ED6F336997718F7"
+          }
+        },
+        {
+          "client_id": "428432476334-td88auvtnc31l0s8mp5p0tpcitbt6eik.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxkTgedwWkJzmsZF20t4010nHa_kLfBE0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
