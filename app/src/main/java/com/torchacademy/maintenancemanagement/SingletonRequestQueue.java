@@ -15,7 +15,7 @@ public class SingletonRequestQueue {
     private static Context appContext;
     public static final Integer DEFAULT_TAG = 100;
 
-    private SingletonRequestQueue(Context appContext){
+    private SingletonRequestQueue(Context appContext) {
         // context passed will always be application context regardless of passed parameter
         this.appContext = appContext.getApplicationContext();
         mRequestQueue = getRequestQueue();
@@ -40,8 +40,9 @@ public class SingletonRequestQueue {
 
     /**
      * Add a request to the queue. A default tag is set when not specified in params
-     * @param req
-     * @param <T>
+     *
+     * @param req Request Object
+     * @param <T> Request Type
      */
     public <T> void addToRequestQueue(Request<T> req) {
 
@@ -50,9 +51,10 @@ public class SingletonRequestQueue {
 
     /**
      * Add a request to the queue with a dedicated tag
-     * @param req
-     * @param singletonRequestQueueTag
-     * @param <T>
+     *
+     * @param req Request Object
+     * @param singletonRequestQueueTag Request Tag
+     * @param <T> Request Type
      */
     public <T> void addToRequestQueue(Request<T> req, Integer singletonRequestQueueTag) {
 
@@ -62,13 +64,19 @@ public class SingletonRequestQueue {
     /**
      * Cancels all requests which contain the same tag. Added requests that did not have a tag specified
      * automatically get the DEFAULT_TAG assigned
-     * @param singletonRequestQueueTag
+     *
+     * @param singletonRequestQueueTag Request Tag
      */
-    public void cancelAllDefaultRequests(Integer singletonRequestQueueTag){
+    public void cancelAllRequests(Integer singletonRequestQueueTag) {
         getRequestQueue().cancelAll(singletonRequestQueueTag);
     }
 
-
+    /**
+     * Cancels all requests which contain the default tag
+     */
+    public void cancelAllDefaultRequests() {
+        getRequestQueue().cancelAll(DEFAULT_TAG);
+    }
 
 
 }
