@@ -16,6 +16,7 @@ public class AccountInformationExpertActivity extends AccountInformationBaseActi
 
     @Override
     void setContentLayout() {
+        // Inflate the Expert Content layout into the stub
         viewStub_profileContent.setLayoutResource(R.layout.content_account_information_expert);
         viewStub_profileContent.inflate();
         textView_technicianTypeValue = (TextView) findViewById(R.id.textView_technicianTypeValue);
@@ -24,6 +25,9 @@ public class AccountInformationExpertActivity extends AccountInformationBaseActi
         setValues();
     }
 
+    /**
+     * Customize the action button for the expert's "Off Duty" function
+     */
     @Override
     void setCustomButtonAction() {
         button_customProfileAction.setText("Off Duty");

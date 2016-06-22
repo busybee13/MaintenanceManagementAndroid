@@ -8,12 +8,20 @@ import android.view.View;
 import android.view.ViewStub;
 import android.widget.Button;
 
+/**
+ * Created by omar.beyhum on 6/20/2016.
+ * Abstract class from which the Expert and User Account Info. activities inherit from.
+ * This class is in charge of inflating the base activity layout to setup common views such as title,
+ * ID, profile picture, edit settings, etc...
+ * Children of this class must setup their own custom content through the ViewStub, found in
+ * content_account_information_base.xml, which is included in the base activity layout
+ */
 abstract class AccountInformationBaseActivity extends AppCompatActivity {
     Toolbar toolbar;
     FloatingActionButton fab_editProfile;
-    String userName;
+    String userName = "OB";
+    String ID = "1";
     Button button_customProfileAction;
-    String ID;
     ViewStub viewStub_profileContent;
 
     @Override
@@ -47,25 +55,35 @@ abstract class AccountInformationBaseActivity extends AppCompatActivity {
     private void setupTitle(String fullName, String ID){
         toolbar = (Toolbar) findViewById(R.id.toolbar_profile);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle(fullName);
-        getSupportActionBar().setSubtitle(ID);
+//        getSupportActionBar().setTitle(fullName);
+        getSupportActionBar().setSubtitle("jhurhur");
+        toolbar.setSubtitle("nhfnhfr");
     }
 
 
 
+    // Glide singleton required for implementation
     private void setupProfilePicture(){
 
     }
 
+    // Edit Profile task, model and APIs required for implementation
     private void goToEditProfileActivity(){
 
     }
-    /* Implement the following for children
-    viewStub_profileContent.setLayoutResource(R.layout.custom_content_account_information);
-    View inflated = viewStub_profileContent.inflate();
+    /*
+     */
+
+    /**
+     * Abstract class; Implement the following for children
+     * viewStub_profileContent.setLayoutResource(R.layout.custom_content_account_information);
+     * View inflated = viewStub_profileContent.inflate();
      */
     abstract void setContentLayout();
 
+    /**
+     * Abstract class, Customize button action for each child activity
+     */
     abstract void setCustomButtonAction();
 
 
