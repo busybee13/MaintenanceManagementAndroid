@@ -4,81 +4,87 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textView_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#46a66b"
         android:text="Login"
-        android:textColor="#FFFFFF"
+        android:background="#46a66b"
         android:textAlignment="center"
-        android:textSize="24dp"
-        android:padding="20dp"/>
-
-    <EditText
-        android:id="@+id/editText_email"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter your Email: "
-        android:layout_below="@+id/textView_login"
-        android:layout_marginRight="40dp"
-        android:layout_marginLeft="40dp"
-        android:inputType="textEmailAddress"
-        />
-    <EditText
-        android:id="@+id/editText_password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/editText_email"
-        android:layout_marginRight="40dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        android:hint="Enter your password: "
-        android:inputType="textPassword"
-        />
-
-    <Button
-    android:id="@+id/button_submit"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="#0000FF"
-    android:text="Submit"
-    android:layout_below="@+id/editText_password"
-    android:paddingTop="10dp"
-    android:paddingBottom="10dp"
-    android:textColor="#FFFFFF"
-    android:layout_marginRight="30dp"
-    android:layout_marginLeft="30dp"/>
-
-    <Button
-        android:id="@+id/button_signUp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Don't have account?"
-        android:layout_below="@+id/button_submit"
+        android:textColor="#FFFFFF"
         android:paddingTop="10dp"
-        android:paddingBottom="10dp"
+        android:paddingBottom="10dp"/>
+    <TextView
+        android:id="@+id/textView_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your mobile number below"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        />
+    <TextView
+        android:id="@+id/textView_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="to receive your validation code."
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView_text1"
+        android:layout_marginBottom="50dp"/>
+    <EditText
+        android:id="@+id/editText_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mobile # "
+        android:layout_below="@+id/textView_text2"
         android:layout_marginRight="30dp"
-        android:layout_marginLeft="30dp"/>
-    <View
+        android:layout_marginLeft="30dp"
+        android:inputType="phone"
+        />
+    <Button
+        android:id="@+id/button_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_mobile"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"
+        android:text="Send"
+        android:background="#2666af"
+        android:textColor="#FFFFFF"
+        />
+    <TextView
+        android:id="@+id/textView_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="New User?"
+        android:layout_below="@id/button_send"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:clickable="true"
+        android:background="?selectableItemBackground"
+        />
+
+    <!--<View
         android:id="@+id/view_leftLine"
-        android:layout_width="120dp"
+        android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@android:color/darker_gray"
-        android:layout_below="@id/button_signUp"
+        android:layout_below="@id/textView_new"
         android:layout_marginTop = "20dp"
         android:layout_marginBottom="20dp"
         android:layout_marginLeft="30dp"
+        android:layout_marginRight="210dp"
         />
     <View
         android:id="@+id/view_RightLine"
-        android:layout_width="120dp"
+        android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@android:color/darker_gray"
-        android:layout_below="@id/button_signUp"
+        android:layout_below="@id/textView_new"
         android:layout_marginTop = "20dp"
         android:layout_marginBottom="20dp"
-        android:layout_marginLeft="170dp"
+        android:layout_marginLeft="210dp"
+        android:layout_marginRight="30dp"
         />
     <TextView
         android:id="@+id/textView_or"
@@ -86,12 +92,22 @@
         android:layout_height="wrap_content"
         android:text="or"
         android:textColor="@android:color/darker_gray"
-        android:layout_toRightOf="@+id/view_leftLine"
-        android:layout_below="@+id/button_signUp"
+        android:layout_below="@id/textView_new"
         android:layout_marginTop="7dp"
+        android:layout_marginLeft="183dp"
         android:paddingLeft="3dp"
         android:textSize="16dp"
-        />
+        android:layout_marginBottom="30dp"
+        />-->
+
+
+    <TextView
+        android:id="@+id/textView_or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="or"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView_new"/>
 
     <com.facebook.login.widget.LoginButton
         android:id="@+id/button_facebook"
@@ -101,20 +117,19 @@
         android:layout_marginRight="30dp"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
         />
 
-    <Button
-        android:id="@+id/button_google"
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Login with google"
-        android:background="#FF0000"
         android:layout_below="@+id/button_facebook"
-        android:layout_marginRight="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
 
         />
-
 
 </RelativeLayout>
