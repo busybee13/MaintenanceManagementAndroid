@@ -1,6 +1,7 @@
 package com.torchacademy.maintenancemanagement;
 
 import android.app.Activity;
+<<<<<<< Updated upstream
 import android.content.Intent;
 import android.content.IntentSender;
 import android.os.Bundle;
@@ -51,11 +52,29 @@ public class MainActivity extends AppCompatActivity implements
 
     private SignInButton btnSignIn;
 
+=======
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
+import android.content.pm.Signature;
+import android.os.Build;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.util.Base64;
+import android.util.Log;
+import android.view.WindowManager;
+
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+>>>>>>> Stashed changes
 
 
+    private final static String TAG = MainActivity.class.getSimpleName();
+
+    // useless comment for commit
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+<<<<<<< Updated upstream
         setContentView(R.layout.activity_login);
 
         btnSignIn = (SignInButton) findViewById(R.id.sign_in_button);
@@ -171,3 +190,46 @@ public class MainActivity extends AppCompatActivity implements
     }
 
 }
+=======
+
+
+        setContentView(R.layout.activity_main);
+        /*
+        Log.d(TAG, "onCreate: " + printKeyHash(this));*/
+
+
+    }
+    /*public static String printKeyHash(Activity context) {
+        PackageInfo packageInfo;
+        String key = null;
+        try {
+            //getting application package name, as defined in manifest
+            String packageName = context.getApplicationContext().getPackageName();
+
+            //Retriving package info
+            packageInfo = context.getPackageManager().getPackageInfo(packageName,
+                    PackageManager.GET_SIGNATURES);
+
+            Log.e("Package Name=", context.getApplicationContext().getPackageName());
+
+            for (Signature signature : packageInfo.signatures) {
+                MessageDigest md = MessageDigest.getInstance("SHA");
+                md.update(signature.toByteArray());
+                key = new String(Base64.encode(md.digest(), 0));
+
+                // String key = new String(Base64.encodeBytes(md.digest()));
+                Log.e("Key Hash=", key);
+            }
+        } catch (PackageManager.NameNotFoundException e1) {
+            Log.e("Name not found", e1.toString());
+        }
+        catch (NoSuchAlgorithmException e) {
+            Log.e("No such an algorithm", e.toString());
+        } catch (Exception e) {
+            Log.e("Exception", e.toString());
+        }
+
+        return key;
+    }*/
+}
+>>>>>>> Stashed changes
