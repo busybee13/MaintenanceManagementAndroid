@@ -1,4 +1,4 @@
-package sqlite.model;
+package com.torchacademy.maintenancemanagement.sqlite.model;
 
 /**
  * Created by zeinab.serhan on 6/21/2016.
