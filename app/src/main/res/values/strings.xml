@@ -2,4 +2,7 @@
     <string name="app_name">Maintenance Management</string>
     <string name="facebook_app_id">290213751326479</string>
     <string name="fb_login_protocol_scheme">fb290213751326479</string>
+    <string name="title_activity_account_information_base">AccountInformationBaseActivity</string>
+
+    <string name="action_settings">Settings</string>
 </resources>
