@@ -14,7 +14,7 @@
             <item android:right="30dp">
                 <bitmap
 
-                    android:gravity="right" android:src="@drawable/ic_arrow_down">
+                    android:gravity="right" android:src="@drawable/ic_arrow">
 
                 </bitmap>
             </item>
