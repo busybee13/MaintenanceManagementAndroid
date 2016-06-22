@@ -74,17 +74,7 @@ public class LoginActivity extends AppCompatActivity implements
 
         // Initializing google plus api client
 
-        if (Build.VERSION.SDK_INT < 16) {
-            getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-                    WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        }
-        else {
 
-
-            getWindow().requestFeature(Window.FEATURE_ACTION_BAR);
-            getSupportActionBar().hide();
-
-        }
 
 
         setContentView(R.layout.activity_login);
