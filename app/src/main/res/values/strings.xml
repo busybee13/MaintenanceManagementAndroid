@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Maintenance Management</string>
+    <string name="new_request">New Request</string>
+    <string name="account_info">Account Info</string>
+    <string name="request_status">Request Status</string>
+    <string name="new_message">New Message</string>
+    <string name="inbox">Inbox</string>
+    <string name="home_title">My Home</string>
 </resources>
