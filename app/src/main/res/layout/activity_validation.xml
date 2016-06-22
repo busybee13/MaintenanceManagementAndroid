@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:background="#46a66b"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"/>
+<TextView
+    android:id="@+id/textView_text1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="A text message has been sent"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="100dp"/>
+    <TextView
+        android:id="@+id/textView_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="to your mobile phone."
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView_text1"/>
+    <TextView
+        android:id="@+id/textView_text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please enter your validation code below."
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView_text2"/>
+    <EditText
+        android:id="@+id/editText_validation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Validation Code"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView_text3"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        />
+    
+    <TextView
+        android:id="@+id/textView_text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Didn't receive a validation code?"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/editText_validation"
+        android:textStyle="bold"
+        android:layout_marginTop="70dp"
+        android:clickable="true"
+        android:background="?selectableItemBackground"
+        />
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="#2666af"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentBottom ="true"
+        android:padding="15dp"/>
+
+</RelativeLayout>
