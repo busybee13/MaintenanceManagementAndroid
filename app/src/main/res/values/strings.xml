@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Maintenance Management</string>
+    <string name="title_activity_account_information_base">AccountInformationBaseActivity</string>
+
+    <string name="action_settings">Settings</string>
 </resources>
