@@ -54,6 +54,15 @@ public class ClientRequest {
         clientRequests.add(new ClientRequest("Request 1", "Pending", "20-1-2016"));
         clientRequests.add(new ClientRequest("Request 2", "Pending", "30-6-2015"));
         clientRequests.add(new ClientRequest("Request 3", "Pending", "20-3-2014"));
+        clientRequests.add(new ClientRequest("Request 4", "Pending", "20-1-2016"));
+        clientRequests.add(new ClientRequest("Request 5", "Completed", "30-6-2015"));
+        clientRequests.add(new ClientRequest("Request 6", "Ongoing", "20-3-2014"));
+        clientRequests.add(new ClientRequest("Request 7", "Ongoing", "20-1-2016"));
+        clientRequests.add(new ClientRequest("Request 8", "Completed", "30-6-2015"));
+        clientRequests.add(new ClientRequest("Request 9", "Completed", "20-3-2014"));
+        clientRequests.add(new ClientRequest("Request 10", "Ongoing", "20-1-2016"));
+        clientRequests.add(new ClientRequest("Request 11", "Completed", "30-6-2015"));
+        clientRequests.add(new ClientRequest("Request 12", "Completed", "20-3-2014"));
         return clientRequests;
     }
 }

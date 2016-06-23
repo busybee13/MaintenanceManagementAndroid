@@ -49,6 +49,7 @@ public class ClientRequestAdapter extends  RecyclerView.Adapter<ClientRequestAda
 
         ClientRequest clientRequest = clientRequestList.get(position);
         holder.textView_request_status.setText("\"" + clientRequest.getName() + "\" is " + clientRequest.getStatus());
+
     }
 
     @Override

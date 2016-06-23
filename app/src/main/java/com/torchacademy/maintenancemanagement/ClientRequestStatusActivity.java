@@ -49,6 +49,8 @@ public class ClientRequestStatusActivity extends AppCompatActivity {
 
         tabLayout_request_status.setupWithViewPager(viewPager_request_status);
 
+
+
                 setupTabLayout();
 
     }

@@ -11,7 +11,7 @@
         android:layout_marginBottom="5dp"
         android:layout_marginTop="30dp"
         android:layout_marginLeft="30dp"
-        android:background="@color/colorPrimary"
+        android:src="@drawable/ic_icon_pending_24dp"
         android:scaleType="centerCrop" />
 
     <TextView
@@ -28,7 +28,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="100dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="55dp"
         android:text="Period"
         android:textSize="9sp" />
 
