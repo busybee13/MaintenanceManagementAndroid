@@ -27,4 +27,3 @@ public class FragmentUserRequestsCompleted extends Fragment {
         super.onViewCreated(view, savedInstanceState);
     }
 }
-
