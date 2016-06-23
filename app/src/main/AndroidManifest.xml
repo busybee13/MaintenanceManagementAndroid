@@ -12,31 +12,37 @@
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id" />
 
+
         <activity
             android:name=".LoginActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".AccountInformationUserActivity" />
-        <activity android:name=".AccountInformationExpertActivity" />
+
+        <activity android:name=".AccountInformationExpertActivity"></activity>
         <activity android:name=".NewRequestActivity" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".ChooserActivity">
 
-        </activity>
-        <activity android:name=".ExpertPanelActivity" />
-        <activity
-            android:name="com.facebook.FacebookActivity"
-            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-            android:label="@string/app_name"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-        <activity android:name=".ValidationActivity"></activity>
-        <activity android:name=".RegisterActivity" />
-        <activity android:name=".ClientRequestStatusActivity">
+        <activity android:name=".ChooserActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".ExpertPanelActivity"></activity>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <activity android:name=".ValidationActivity">
+
+        </activity>
+        <activity android:name=".RegisterActivity"></activity>
+
+
     </application>
 
 </manifest>
