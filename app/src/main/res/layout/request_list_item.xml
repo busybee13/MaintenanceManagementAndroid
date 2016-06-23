@@ -4,38 +4,33 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
+    <ImageView
+        android:id="@+id/imageView_request_status"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:background="@color/colorPrimary"
+        android:scaleType="centerCrop" />
 
-
-
-
-
-        <ImageView
-            android:id="@+id/imageView_request_status"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginBottom="5dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginLeft="30dp"
-            android:background="@color/colorPrimary"
-            android:scaleType="centerCrop" />
-
-        <TextView
-            android:id="@+id/textView_request_status"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="100dp"
-            android:layout_marginTop="30dp"
-            android:text="Request X is Pending"
-            android:textSize="18sp"
-            android:textColor="@color/list_item_primary"/>
-        <TextView
-            android:id="@+id/textView_period_request_status"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="100dp"
-            android:layout_marginTop="60dp"
-            android:text="Period"
-            android:textSize="9sp" />
+    <TextView
+        android:id="@+id/textView_request_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="30dp"
+        android:text="Request X is Pending"
+        android:textSize="18sp"
+        android:textColor="@color/list_item_primary"/>
+    <TextView
+        android:id="@+id/textView_period_request_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="60dp"
+        android:text="Period"
+        android:textSize="9sp" />
 
         <ImageButton
             android:id="@+id/imageView_open_request_status"
@@ -96,11 +91,7 @@
             android:background="@color/colorPrimary"
             android:scaleType="centerCrop" />
 
-
-</LinearLayout>
-
-
-
+    </LinearLayout>
 
 </RelativeLayout>
 
