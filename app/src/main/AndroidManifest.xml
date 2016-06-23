@@ -21,7 +21,7 @@
             android:name="com.bumptech.glide.integration.volley.VolleyGlideModule"
             android:value="GlideModule" />
 
-        <activity android:name=".ClientPanel">
+        <activity android:name=".ClientPanel"></activity>
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id" />

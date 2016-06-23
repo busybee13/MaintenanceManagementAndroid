@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#45A76B</color>
-    <color name="colorPrimaryDark">#25875B</color>
     <color name="color">#3F51B5</color>
-    <color name="colorAccent">#FF4081</color>
     <color name="list_item_primary">#000000</color>
-    <color name="colorPrimary">#45A76B</color>
     <color name="colorPrimaryDark">#2E7D32</color>
     <color name="colorAccent">#45A76B</color>
     <color name="buttonClicked">#b8b894</color>

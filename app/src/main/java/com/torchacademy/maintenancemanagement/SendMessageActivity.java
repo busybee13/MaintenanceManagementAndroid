@@ -1,11 +1,7 @@
 package com.torchacademy.maintenancemanagement;
 
 import android.content.DialogInterface;
-import android.content.Intent;
-import android.graphics.Color;
-import android.media.MediaRecorder;
 import android.os.Bundle;
-import android.os.Environment;
 import android.os.SystemClock;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
@@ -14,7 +10,6 @@ import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.View;
 import android.widget.Chronometer;
 import android.widget.EditText;
@@ -26,7 +21,6 @@ import com.torchacademy.maintenancemanagement.Adapter.AudioRecyclerAdapter;
 import com.torchacademy.maintenancemanagement.pojos.VoiceNote;
 import com.torchacademy.maintenancemanagement.utils.AudioUtils;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
