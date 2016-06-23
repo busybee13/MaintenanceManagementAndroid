@@ -53,7 +53,3 @@ public class MainActivity extends AppCompatActivity  {
         super.onCreate(savedInstanceState);
 
     }
-
-
-
-}
