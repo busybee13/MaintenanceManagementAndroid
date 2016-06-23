@@ -49,8 +49,6 @@ public class ClientRequestStatusActivity extends AppCompatActivity {
 
         tabLayout_request_status.setupWithViewPager(viewPager_request_status);
 
-
-
                 setupTabLayout();
 
     }
@@ -106,10 +104,12 @@ public class ClientRequestStatusActivity extends AppCompatActivity {
                 .getCustomView()
                 .setBackgroundColor(Color.parseColor("#3f51b5"));
 
+
         tabLayout_request_status.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
                 tab.getCustomView().setBackgroundColor(Color.parseColor("#3f51b5"));
+                viewPager_request_status.setCurrentItem(tab.getPosition());
             }
 
             @Override
