@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#45A76B</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimaryDark">#2E7D32</color>
     <color name="colorAccent">#45A76B</color>
-    <color name="buttonColor">#3F51B5</color>
+    <color name="buttonClicked">#b8b894</color>
+    <color name="panelButtonColor">#3F51B5</color>
 
 </resources>
