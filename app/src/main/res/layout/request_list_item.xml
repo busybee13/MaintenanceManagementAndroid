@@ -37,7 +37,7 @@
             android:text="Period"
             android:textSize="9sp" />
 
-        <ImageView
+        <ImageButton
             android:id="@+id/imageView_open_request_status"
             android:layout_width="50dp"
             android:layout_height="50dp"
@@ -47,6 +47,7 @@
             android:layout_gravity="right"
             android:src="@drawable/ic_item_right_black_24dp"
             android:scaleType="centerCrop"
+            android:background="@android:color/transparent"
             android:layout_alignParentRight="true"/>
 
 
