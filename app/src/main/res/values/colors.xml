@@ -4,4 +4,5 @@
     <color name="colorPrimaryDark">#25875B</color>
     <color name="color">#3F51B5</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="list_item_primary">#000000</color>
 </resources>
