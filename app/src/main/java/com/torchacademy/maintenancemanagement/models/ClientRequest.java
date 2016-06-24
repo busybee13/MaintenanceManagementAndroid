@@ -1,12 +1,15 @@
 package com.torchacademy.maintenancemanagement.models;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by omar.halabi on 6/23/2016.
  */
-public class ClientRequest {
+public class ClientRequest implements Parcelable {
     String status;
     String name;
 
@@ -23,6 +26,24 @@ public class ClientRequest {
         this.time = time;
 
     }
+
+    protected ClientRequest(Parcel in) {
+        status = in.readString();
+        name = in.readString();
+        time = in.readString();
+    }
+
+    public static final Creator<ClientRequest> CREATOR = new Creator<ClientRequest>() {
+        @Override
+        public ClientRequest createFromParcel(Parcel in) {
+            return new ClientRequest(in);
+        }
+
+        @Override
+        public ClientRequest[] newArray(int size) {
+            return new ClientRequest[size];
+        }
+    };
 
     public String getStatus() {
         return status;
@@ -97,4 +118,15 @@ public class ClientRequest {
         return clientRequests;
     }
 
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(status);
+        dest.writeString(name);
+        dest.writeString(time);
+    }
 }

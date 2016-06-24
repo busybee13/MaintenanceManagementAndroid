@@ -33,7 +33,7 @@
         android:textSize="9sp" />
 
         <ImageButton
-            android:id="@+id/imageView_open_request_status"
+            android:id="@+id/imageButton_open_request_status"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginBottom="5dp"

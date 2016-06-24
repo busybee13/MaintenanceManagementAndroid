@@ -1,24 +1,233 @@
 <?xml version="1.0" encoding="utf-8"?>
 
+
+<RelativeLayout
+
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
 <ScrollView
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    android:layout_above="@+id/linearLayout_buttons"
+    >
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingBottom="@dimen/activity_vertical_margin"
-        android:paddingLeft="@dimen/activity_horizontal_margin"
-        android:paddingRight="@dimen/activity_horizontal_margin"
-        android:paddingTop="@dimen/activity_vertical_margin"
+
         tools:context="com.torchacademy.maintenancemanagement.ClientRequestViewActivity">
 
+        <ImageView
+
+            android:id="@+id/first_separator"
+            android:layout_marginTop="130dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="@color/grey_status"
+            />
+        <ImageView
+            android:id="@+id/second_separator"
+            android:layout_marginTop="190dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="@color/grey_status"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="135dp">
+
+            <ImageView
+                android:id="@+id/image_separator_1"
+                android:layout_centerVertical="true"
+                android:layout_width="25dp"
+                android:src="@drawable/ic_request_attention_black_24dp"
+                android:layout_height="25dp" />
+            <ImageView
+                android:id="@+id/image_request_history"
+                android:src="@drawable/ic_request_history_black_24dp"
+                android:clickable="true"
+                android:layout_marginRight="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="50dp"
+                android:background="@android:color/transparent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/textView_history"
+                />
+
+            <TextView
+                android:clickable="true"
+                android:id="@id/textView_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="History"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="50dp"
+
+                />
+
+            <TextView
+                android:id="@+id/latest_expert_message"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/image_separator_1"
+                android:text="Your attention is required!\n Please Provide more details"
+                />
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/edit_text_message"
+            style="@style/Base.TextAppearance.AppCompat.Large"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@+id/second_separator"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/text_box_border"
+            android:focusable="true"
+            android:gravity="top"
+            android:hint="Type your message here"
+            android:inputType="textMultiLine"
+            android:isScrollContainer="true"
+            android:padding="10dp"
+            android:textColorHint="@color/colorPrimary"
+            android:textIsSelectable="true"
+            android:textSize="15sp" />
+
+        <ImageButton
+            android:id="@+id/image_button_add_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_text_message"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/colorPrimary"
+            android:elevation="4dp"
+            android:padding="15dp"
+            android:src="@drawable/ic_add_photo" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_images"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/edit_text_message"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/image_button_add_image">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+
+
+        <ImageButton
+            android:id="@+id/image_button_add_voice_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="80dp"
+            android:background="@color/colorPrimary"
+            android:layout_below="@+id/image_button_add_image"
+            android:elevation="4dp"
+            android:padding="15dp"
+            android:src="@drawable/ic_add_voice" />
+
+
+        <!--<Chronometer-->
+        <!--android:id="@+id/chronometer_audio_record"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignBottom="@+id/image_button_add_voice_note"-->
+        <!--android:layout_alignRight="@+id/image_button_add_voice_note"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginRight="4dp"-->
+        <!--android:format="%s"-->
+        <!--android:textColor="#ffffff"-->
+        <!--android:textSize="10sp"-->
+        <!--android:visibility="gone" />-->
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_voice"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/recycler_images"
+
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/image_button_add_voice_note"
+            android:paddingTop="24dp">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+        <include layout="@layout/request_list_item"
+            android:id="@+id/request_status">
+
+        </include>
 
 
 
 
     </RelativeLayout>
 </ScrollView>
+
+    <LinearLayout
+        android:id="@id/linearLayout_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@id/button_new_request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+            android:background="@color/color"
+            android:drawableLeft="@drawable/ic_request"
+            android:drawableStart="@drawable/ic_request"
+            android:drawableTint="@android:color/white"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_margin="10dp"
+            android:text="New Request"
+            android:textColor="@android:color/white"
+            android:layout_weight="1"
+            android:clickable="true"/>
+
+        <Button
+            android:id="@id/button_new_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:background="@color/color"
+            android:drawableLeft="@drawable/ic_new_message"
+            android:drawableStart="@drawable/ic_new_message"
+            android:drawableTint="@android:color/white"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_weight="1"
+            android:text="New Message"
+            android:clickable="true"
+            android:textColor="@android:color/white" />
+
+
+    </LinearLayout>
+    </RelativeLayout>
 

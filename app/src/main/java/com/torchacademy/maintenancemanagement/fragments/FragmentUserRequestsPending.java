@@ -1,6 +1,7 @@
 package com.torchacademy.maintenancemanagement.fragments;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -10,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.torchacademy.maintenancemanagement.ClientRequestViewActivity;
 import com.torchacademy.maintenancemanagement.R;
 import com.torchacademy.maintenancemanagement.adapters.ClientRequestAdapter;
 import com.torchacademy.maintenancemanagement.models.ClientRequest;
@@ -32,7 +34,18 @@ public class FragmentUserRequestsPending extends Fragment {
 
         recyclerview_pending.setLayoutManager(linearLayoutManager);
 
-        recyclerview_pending.setAdapter(new ClientRequestAdapter(getContext(), ClientRequest.dummyListPending()));
+        final ClientRequestAdapter clientRequestAdapter = new ClientRequestAdapter(getContext(),
+                ClientRequest.dummyListPending());
+        clientRequestAdapter.setTouchListener(new ClientRequestAdapter.TouchListener() {
+            @Override
+            public void onClick(View view, int position) {
+                Intent intent = new Intent(getContext(), ClientRequestViewActivity.class);
+                intent.putExtra("request", clientRequestAdapter.getClientRequestList().get(position));
+                startActivity(intent);
+            }
+        });
+
+        recyclerview_pending.setAdapter(clientRequestAdapter);
 
 
 

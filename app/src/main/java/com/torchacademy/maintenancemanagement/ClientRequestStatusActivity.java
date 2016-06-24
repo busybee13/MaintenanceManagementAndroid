@@ -1,7 +1,9 @@
 package com.torchacademy.maintenancemanagement;
 
 import android.graphics.Color;
+import android.media.Image;
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBar;
@@ -50,6 +52,9 @@ public class ClientRequestStatusActivity extends AppCompatActivity {
         tabLayout_request_status.setupWithViewPager(viewPager_request_status);
 
                 setupTabLayout();
+
+
+
 
     }
 
