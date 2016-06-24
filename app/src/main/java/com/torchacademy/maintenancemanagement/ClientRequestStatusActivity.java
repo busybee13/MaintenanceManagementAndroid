@@ -91,6 +91,11 @@ public class ClientRequestStatusActivity extends AppCompatActivity {
         imageView = (ImageView) tab4.findViewById(R.id.imageView_tab_picture);
         imageView.setImageResource(R.drawable.ic_tab_completed);
 
+
+
+
+
+
         textView = (TextView) tab4.findViewById(R.id.textView_tab_name);
         textView.setText("Completed");
 
@@ -110,6 +115,7 @@ public class ClientRequestStatusActivity extends AppCompatActivity {
             public void onTabSelected(TabLayout.Tab tab) {
                 tab.getCustomView().setBackgroundColor(Color.parseColor("#3f51b5"));
                 viewPager_request_status.setCurrentItem(tab.getPosition());
+
             }
 
             @Override

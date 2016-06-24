@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.torchacademy.maintenancemanagement">
 
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -12,8 +12,6 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-
         <meta-data
             android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule"
             android:value="GlideModule" />
@@ -21,36 +19,28 @@
             android:name="com.bumptech.glide.integration.volley.VolleyGlideModule"
             android:value="GlideModule" />
 
-        <activity android:name=".ClientPanel"></activity>
+        <activity android:name=".ClientPanel" />
+
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id" />
-
 
         <activity
             android:name=".LoginActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".AccountInformationUserActivity" />
-
-        <activity android:name=".AccountInformationExpertActivity"></activity>
+        <activity android:name=".AccountInformationExpertActivity" />
         <activity android:name=".NewRequestActivity" />
         <activity android:name=".MainActivity" />
-
-        <activity android:name=".ChooserActivity">
-
-        </activity>
-
+        <activity android:name=".ChooserActivity"></activity>
         <activity android:name=".ExpertPanelActivity"></activity>
         <activity
             android:name="com.facebook.FacebookActivity"
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-
-        <activity android:name=".ValidationActivity">
-
-        </activity>
-        <activity android:name=".RegisterActivity"></activity>
+        <activity android:name=".ValidationActivity"></activity>
+        <activity android:name=".RegisterActivity" />
         <activity android:name=".ClientRequestStatusActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -58,10 +48,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SendMessageActivity"
+        <activity
+            android:name=".SendMessageActivity"
             android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <activity android:name=".ClientRequestViewActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
